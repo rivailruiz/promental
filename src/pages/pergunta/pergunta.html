@@ -1,0 +1,35 @@
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>-->
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <h1 text-center>Pergunta No {{id}}</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>{{corpo}}</h2>
+      <ion-list radio-group [(ngModel)]="resposta">
+        <ion-item>
+          <ion-label>Sim</ion-label>
+          <ion-radio value="Sim"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Não</ion-label>
+          <ion-radio value="Nao"></ion-radio>
+        </ion-item>
+
+        </ion-list>
+
+
+    </ion-card-content>
+    <button ion-button full color="primary" (tap)="proximaPergunta()">Proxima</button>
+  </ion-card>
+
+</ion-content>
